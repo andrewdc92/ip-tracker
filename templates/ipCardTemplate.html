@@ -1,13 +1,13 @@
 <div class="ipAddress">
 
-    <h3> Geolocation for your IP Address: {{ipDirController.ip}} </h3>
-      <p> @ {{ipDirController.latitude}} {{ipDirController.longitude}} </p>
+    <h3> Geolocation for your IP Address: {{ipDirController.data.ip}} </h3>
+      <p> @ {{ipDirController.data.latitude}} latitude, {{ipDirController.data.longitude}} longitude </p>
   <div>
     <ul>
-      <li> {{ipDirController.city}} </li>
-      <li> {{ipDirController.region_name}} </li>
-      <li> {{ipDirController.zip_code}} </li>
-      <li> {{ipDirController.country_code}}</li>
+      <li> City: {{ipDirController.data.city}} </li>
+      <li> Region/State: {{ipDirController.data.region_name}} </li>
+      <li> Zip Code: {{ipDirController.data.zip_code}} </li>
+      <li> Country: {{ipDirController.data.country_code}}</li>
     </ul>
   </div>
 </div>
