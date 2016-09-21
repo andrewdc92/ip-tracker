@@ -1,0 +1,20 @@
+{
+  "name": "iptracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewdc92/ip-tracker.git"
+  },
+  "author": "andrew cordivari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrewdc92/ip-tracker/issues"
+  },
+  "homepage": "https://github.com/andrewdc92/ip-tracker#readme"
+}
