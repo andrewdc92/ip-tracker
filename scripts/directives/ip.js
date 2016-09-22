@@ -15,7 +15,7 @@ angular.module('ipApp')
   ipDirController.$inject=['$http', "ipService"];
   function ipDirController($http, ipService){
     var vm = this;
-    var url="http://freegeoip.net/json/";
+    var url="https://freegeoip.net/json/";
     console.log(vm.data);
     vm.getData = function(data){
       $http({
