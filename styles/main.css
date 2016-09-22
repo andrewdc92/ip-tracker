@@ -2,21 +2,30 @@ p {
   padding: 20px;
 }
 
+p1{
+  color: white;
+}
+
+h1, h3 {
+  color: white;
+}
+
 .btn {
 display: inline-block;
 font: white;
 }
 
-/*ul {
-  display: inline-block;
+div {
+  padding: 20px;
 }
-li {
 
-  border-style: solid;
-  border-width: medium;
-  border-top-color: green;
-  border-bottom-color: green;
-  border-left-color: yellow;
-  border-right-color: yellow;
-  padding: 10px;
-}*/
+#modalBtn {
+  background-color: #3081FF;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+body {
+  background-color: #f0ad4e;
+}

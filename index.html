@@ -31,31 +31,37 @@
       </div>
 
       <div ng-controller="ModalDemoCtrl as $ctrl">
-    <script type="text/ng-template" id="myModalContent.html">
-        <div class="modal-header">
-            <h3 class="modal-title" id="modal-title">I'm a modal!</h3>
-        </div>
-        <div class="modal-body" id="modal-body">
-            <ul>
-                <li ng-repeat="item in $ctrl.items">
-                    <a href="#" ng-click="$event.preventDefault(); $ctrl.selected.item = item">{{ item }}</a>
-                </li>
-            </ul>
-            Selected: <b>{{ $ctrl.selected.item }}</b>
-        </div>
-        <div class="modal-footer">
-            <button class="btn btn-primary" type="button" ng-click="$ctrl.ok()">OK</button>
-            <button class="btn btn-warning" type="button" ng-click="$ctrl.cancel()">Cancel</button>
-        </div>
-    </script>
+      <script type="text/ng-template" id="myModalContent.html">
+          <div class="modal-header">
+              <h3 class="modal-title" id="modal-title">Your IP address can be used for...</h3>
+          </div>
+          <div class="modal-body" id="modal-body">
+              <p> This is information about your online identity. Luckily, personal info like your name and "exact" location
+                  cannot be determined through your IP alone. However, most websites log your IP when you visit it them as a way
+                  to protect the online community from abusive users. If an individual commits a cybercrime, the authorities can subpoena
+                  the individual's internet service provider for specific info after using a resource like the <a href = "https://www.arin.net/resources/tools/"> ARIN database. </a>
+                  In addition to your ISP, most companies like Google and Facebook also store your IP address. There are multiple methods
+                  that companies utilize to track your behavior, habits, and search terminology, including cookies (less popular
+                  now due to cookie-blocking), <a href="https://en.wikipedia.org/wiki/Web_beacon"> web beacons,</a>  embedded services like
+                  Google Analytics, and <a href="http://randomwalker.info/publications/OpenWPM_1_million_site_tracking_measurement.pdf">
+                  fingerprint scripts. </a>  </p>
 
-    <button type="button" class="btn btn-default" ng-click="$ctrl.open()">Open me!</button>
-    <button type="button" class="btn btn-default" ng-click="$ctrl.open('lg')">Large modal</button>
-    <button type="button" class="btn btn-default" ng-click="$ctrl.open('sm')">Small modal</button>
-    <button type="button" class="btn btn-default" ng-click="$ctrl.toggleAnimation()">Toggle Animation ({{ $ctrl.animationsEnabled }})</button>
-    <button type="button" class="btn btn-default" ng-click="$ctrl.openComponentModal()">Open a component modal!</button>
-    <div ng-show="$ctrl.selected">Selection from a modal: {{ $ctrl.selected }}</div>
-</div>
+              <p> If tracking becomes frustrating or bothersome, there is an array of methods, mainly by utilizing <a href = "https://www.bestvpn.com/blog/38176/vpns-for-beginners/"> VPNs</a> (virtual private networks)
+                that allow you to obfuscate your IP address by routing it through different servers or host computers. This is a common workaround for
+                individuals to access familiar elements of the internet in different countries, like watching Netflix in countries that don't have it. If you're interested in discussing
+                more about the Internet, tech, or anonymity, you can reach me at <a href="mailto:andrew.cordivari@gmail.com"> andrew.cordivari@gmail.com </a>
+
+              <!-- Selected: <b>{{ $ctrl.selected.item }}</b> -->
+          </div>
+          <div class="modal-footer">
+              <button class="btn btn-primary" type="button" ng-click="$ctrl.ok()">OK</button>
+              <button class="btn btn-warning" type="button" ng-click="$ctrl.cancel()">Cancel</button>
+          </div>
+      </script>
+
+
+      <center><button id="modalBtn" type="button" class="btn btn-default" ng-click="$ctrl.open('lg')">Learn More...</button><center>
+  </div>
 
 
     </div>

@@ -1,7 +1,7 @@
 angular.module('ipApp', ['ngAnimate', 'ngSanitize', 'ui.bootstrap']);
 angular.module('ipApp').controller('ModalDemoCtrl', function ($uibModal, $log) {
   var $ctrl = this;
-  $ctrl.items = ['item1', 'item2', 'item3'];
+  $ctrl.items = 'templateUrl',
 
   $ctrl.animationsEnabled = true;
 
