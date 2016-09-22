@@ -1,0 +1,22 @@
+p {
+  padding: 20px;
+}
+
+.btn {
+display: inline-block;
+font: white;
+}
+
+/*ul {
+  display: inline-block;
+}
+li {
+
+  border-style: solid;
+  border-width: medium;
+  border-top-color: green;
+  border-bottom-color: green;
+  border-left-color: yellow;
+  border-right-color: yellow;
+  padding: 10px;
+}*/

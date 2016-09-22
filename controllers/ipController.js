@@ -3,5 +3,5 @@ angular.module('ipApp')
 
   function ipController() {
       var vm = this;
-      vm.ip = "38.140.30.202"
+      // vm.ip = "38.140.30.202"
   };

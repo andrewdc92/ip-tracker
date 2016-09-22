@@ -1,13 +1,12 @@
-<div class="ipAddress">
+
+<center><div class="ipAddress">
 
     <h3> Geolocation for your IP Address: {{ipDirController.data.ip}} </h3>
       <p> @ {{ipDirController.data.latitude}} latitude, {{ipDirController.data.longitude}} longitude </p>
   <div>
-    <ul>
-      <li> City: {{ipDirController.data.city}} </li>
-      <li> Region/State: {{ipDirController.data.region_name}} </li>
-      <li> Zip Code: {{ipDirController.data.zip_code}} </li>
-      <li> Country: {{ipDirController.data.country_code}}</li>
-    </ul>
+    <button type="button" class="btn btn btn-success">{{ipDirController.data.city}}</button>
+    <button type="button" class="btn btn btn-success">{{ipDirController.data.region_name}}</button>
+    <button type="button" class="btn btn btn-success">{{ipDirController.data.zip_code}}</button>
+    <button type="button" class="btn btn btn-success">{{ipDirController.data.country_code}}</button>
   </div>
-</div>
+</div></center>

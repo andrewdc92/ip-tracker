@@ -4,18 +4,21 @@
     <meta charset="utf-8">
     <title>I C UR IP </title>
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
     <script type='text/javascript' src='app.js'></script>
     <script type='text/javascript' src='scripts/directives/ip.js'></script>
     <script type ='text/javascript' src='controllers/ipController.js'></script>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script type="text/javascript" src="services/ipservice.js"></script>
 
   </head>
   <body>
 
     <div class="container" ng-controller="ipController as ipController">
-      <h1>Your Current Geolocation</h1>
+      <center><h1>Your Current Geolocation</h1></center>
       <div class="row">
         <ip-address ip="{{ip}}"></ip-address>
         <!-- hypenated here -->
