@@ -9,7 +9,15 @@ p1{
 h1, h3 {
   color: white;
 }
-
+#ok {
+  margin-left: 5px;
+  width: 100px;
+  text-align: center;
+}
+#cancel {
+  width: 100px;
+  text-align: center;
+}
 .btn {
 display: block;
 font: white;
