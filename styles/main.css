@@ -11,12 +11,13 @@ h1, h3 {
 }
 
 .btn {
-display: inline-block;
+display: block;
 font: white;
+width: 300px;
 }
 
 div {
-  padding: 20px;
+  padding: 10px;
 }
 
 #modalBtn {
@@ -28,4 +29,15 @@ div {
 
 body {
   background-color: #f0ad4e;
+}
+
+footer {
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 0px;
+  position:fixed;
+  bottom:0;
+  width:100%;
+  /*position: fixed;*/
 }
