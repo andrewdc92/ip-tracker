@@ -12,3 +12,5 @@ Currently hosted at https://andrewdc92.github.io/ip-tracker/
 Just click the link and it will render your approximate location. Mobile results will vary if you're connected to 3g/4g/LTE.
 
 I could have utilized the built-in HTML geolocation feature instead of the API, but that requires the user to accept permission. I wanted this to serve as a simple educational resource for showing the metadata that is attached an IP address. 
+
+The optional challenge here was to create a custom directive, so I went an unconventional route to pursue the challenge. I ran the majority of the logic through a custom directive instead of a controller to run the API request. 
